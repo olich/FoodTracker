@@ -12,6 +12,7 @@ import UIKit
     
     //MARK: Properties
     private var ratingButtons = [UIButton]()
+    //private var hStackVew = uihorizont
     
     var rating = 0 {
         didSet {
