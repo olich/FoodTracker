@@ -9,6 +9,11 @@
 import UIKit
 import os.log
 
+enum PrinterError: Error {
+    case outOfPaper
+    case noToner
+    case onFire
+}
 class MealTableViewController: UITableViewController {
 
     //MARK: Properties
