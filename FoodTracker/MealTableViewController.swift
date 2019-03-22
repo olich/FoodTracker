@@ -17,7 +17,6 @@ enum PrinterError: Error {
 class MealTableViewController: UITableViewController {
 
     //MARK: Properties
-    
     var meals = [Meal]()
     
     override func viewDidLoad() {
@@ -42,7 +41,6 @@ class MealTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -76,7 +74,7 @@ class MealTableViewController: UITableViewController {
     }
 
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             meals.remove(at: indexPath.row)
